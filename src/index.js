@@ -1,12 +1,30 @@
+// https://www.kirupa.com/react/simple_todo_app_react.htm
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import TodoList from "./TodoList"
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+
+var destination = document.querySelector("#container");
+
+ReactDOM.render(
+    <div>
+        <TodoList/>
+    </div>,
+    destination
+);
+
+
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+
+
+
+
+ serviceWorker.unregister();
